@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>ezVoltz</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb521667560034752</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.ezvoltz.app</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.41183024852-3ai57bsgf6qpsdp6j49a00u7416f4l4t</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.638166490731-gpo5tdk1pgmu6di1pdlhsh8gca7a3f8c</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.amptium.ezvoltz</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>ezVOLTz</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>FacebookAppID</key>
+	<string>521667560034752</string>
+	<key>FacebookClientToken</key>
+	<string>f6b9bb8fa4ceb636111a607e194e3ba7</string>
+	<key>FacebookDisplayName</key>
+	<string>ezvoltzApp</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+	<key>NSExceptionDomains</key>
+		<dict>
+			<key>localhost</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
+		</dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Need to open music</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>need to connect to bluetooth </string>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Need to connect to external devices</string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Need to show dates</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Used to set profile picture</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Need to initiate call from app</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>We'll use your location to find nearby EV charging stations</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We'll use your location to find nearby EV charging stations</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We'll use your location to find nearby EV charging stations</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Need to have voice search in app</string>
+	<key>NSMotionUsageDescription</key>
+	<string>Need to show user's movement</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Used to set profile picture</string>
+	<key>NSSiriUsageDescription</key>
+	<string>commands to siri</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Need to have voice search in app</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>AntDesign.ttf</string>
+		<string>Entypo.ttf</string>
+		<string>EvilIcons.ttf</string>
+		<string>Feather.ttf</string>
+		<string>FontAwesome.ttf</string>
+		<string>FontAwesome5_Brands.ttf</string>
+		<string>FontAwesome5_Regular.ttf</string>
+		<string>FontAwesome5_Solid.ttf</string>
+		<string>Fontisto.ttf</string>
+		<string>Foundation.ttf</string>
+		<string>Ionicons.ttf</string>
+		<string>MaterialCommunityIcons.ttf</string>
+		<string>MaterialIcons.ttf</string>
+		<string>Octicons.ttf</string>
+		<string>SimpleLineIcons.ttf</string>
+		<string>Zocial.ttf</string>
+		<string>BertiogaSans-Black.ttf</string>
+		<string>BertiogaSans-BlackItalic.ttf</string>
+		<string>BertiogaSans-Bold.ttf</string>
+		<string>BertiogaSans-BoldItalic.ttf</string>
+		<string>BertiogaSans-ExtraBold.ttf</string>
+		<string>BertiogaSans-ExtraBoldItalic.ttf</string>
+		<string>BertiogaSans-ExtraLight.ttf</string>
+		<string>BertiogaSans-ExtraLightItalic.ttf</string>
+		<string>BertiogaSans-Italic.ttf</string>
+		<string>BertiogaSans-Light.ttf</string>
+		<string>BertiogaSans-LightItalic.ttf</string>
+		<string>BertiogaSans-Medium.ttf</string>
+		<string>BertiogaSans-MediumItalic.ttf</string>
+		<string>BertiogaSans-Regular.ttf</string>
+		<string>BertiogaSans-SemiBold.ttf</string>
+		<string>BertiogaSans-SemiBoldItalic.ttf</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>arm64</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+	</array>
+		<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+</dict>
+</plist>

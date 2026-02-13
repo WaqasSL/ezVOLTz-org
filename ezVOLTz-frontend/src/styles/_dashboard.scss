@@ -1,0 +1,216 @@
+.ez__DashboardLayout {
+  position: relative;
+
+  .ez__ChargingActivityCard,
+  .ez__TripCard {
+    position: relative;
+
+    .ez__PosBlock {
+      @include TransForm(rotate(50deg));
+    }
+
+    .cardIcon {
+      width: 60px;
+      height: auto;
+      svg {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .ez__CardInfo {
+      width: calc(100% - 90px);
+      @include Media(767) {
+        width: 100%;
+      }
+      .ez__InfoText {
+        width: calc(100% - 40px);
+      }
+    }
+  }
+
+  .ez__HeaderSearch input {
+    width: calc(100% - 30px);
+    min-width: 300px;
+    @include Media(1024) {
+      min-width: 100%;
+    }
+  }
+
+  .ez__LayoutDiv {
+    position: relative;
+    min-height: calc(100vh - 65px);
+    z-index: -1;
+    .ez__Sidebar {
+      position: absolute;
+      width: 250px;
+      left: 0;
+      top: 0;
+      height: calc(100vh - 65px);
+      overflow-y: scroll;
+      z-index: 9999;
+      @include Media(1026) {
+        max-width: 300px;
+        top: 0;
+        left: 0;
+        z-index: 99;
+      }
+      .ez__NavItems a.active {
+        background: #ebffeb;
+      }
+    }
+
+    .ez__LayoutPages {
+      position: relative;
+      width: 100%;
+      height: calc(100vh - 65px);
+      padding-left: 250px;
+      overflow-y: scroll;
+      @include Media(1023) {
+        padding-left: 0px;
+      }
+    }
+    .ez__Home iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.ez__HeaderSearch * {
+  color: #808080 !important;
+  background: #f0f1f4 !important;
+  font-size: 1rem;
+  input {
+    background: transparent !important;
+  }
+}
+
+.ez__HeaderSearch input,
+.ez__FormInput input {
+  position: relative;
+  width: calc(100% - 30px);
+}
+
+//Add Vehicle
+.ez__VehicleImage label {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-color: #228b22;
+  padding: 15px;
+  svg {
+    width: 60px;
+    height: 60px;
+    path {
+      color: #228b22;
+      fill: #228b22;
+    }
+  }
+  .dmajdp {
+    flex-direction: column;
+    margin-left: 10px;
+    span:first-child {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+//Switch
+.ezSwitch {
+  position: relative;
+  width: 60px;
+}
+.ezSwitch input[type='checkbox'] {
+  display: none;
+}
+.ezSwitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 1px solid #228b22;
+  border-radius: 15px;
+}
+.ezSwitch-inner {
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.ezSwitch-inner:before,
+.ezSwitch-inner:after {
+  float: left;
+  width: 50%;
+  height: 20px;
+  padding: 0;
+  line-height: 20px;
+  font-size: 8px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.ezSwitch-inner:before {
+  content: '';
+  padding-left: 5px;
+  background-color: transparent;
+  color: #ffffff;
+}
+.ezSwitch-inner:after {
+  content: '';
+  padding-right: 5px;
+  background-color: transparent;
+  color: #228b22;
+  text-align: right;
+}
+.ezSwitch-switch {
+  width: 13px;
+  margin: 3.5px;
+  background: #228b22;
+  border: 1px solid #228b22;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 39px;
+  transition: all 0.3s ease-in 0s;
+}
+.ezSwitch-cb:checked + .ezSwitch-label .ezSwitch-inner {
+  margin-left: 0;
+}
+.ezSwitch-cb:checked + .ezSwitch-label .ezSwitch-switch {
+  right: 0;
+}
+
+.tripMap {
+  position: relative;
+  @include Media(767) {
+    height: 500px;
+  }
+}
+
+//Review Card
+.reviewFlexCard {
+  position: relative;
+  z-index: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 1px;
+    height: 95%;
+    z-index: -1;
+    background: #d9d9d9;
+  }
+  .contentDiv {
+    width: calc(100% - 50px);
+  }
+}
+
+//Profile Drowpdown
+.dropDownOverFlow {
+  max-height: calc(100vh - 70px);
+  height: 100%;
+  overflow-y: scroll;
+}

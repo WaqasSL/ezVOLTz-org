@@ -1,0 +1,7 @@
+{
+  "client_id": "com.ezvoltz.auth",
+  "team_id": "KCSTMK7942",
+  "key_id": "A6T36WYW6Z",
+  "redirect_uri": "https://www.ezvoltz.app",
+  "scope": "name email"
+}

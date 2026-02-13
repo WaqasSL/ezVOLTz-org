@@ -1,0 +1,21 @@
+.ez__FormLine {
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 40%;
+    height: 2px;
+    background: nth($color, 2);
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 45%;
+    right: 0;
+    width: 40%;
+    height: 2px;
+    background: nth($color, 2);
+  }
+}

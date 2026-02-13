@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "933471212017",
+    "project_id": "ezvoltz-fcd40",
+    "storage_bucket": "ezvoltz-fcd40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933471212017:android:e9b11fdf57dfd3cea43450",
+        "android_client_info": {
+          "package_name": "com.ezvoltz.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY8ZLQMKWovMhEdMqpsROPtXX1n9lT1rE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

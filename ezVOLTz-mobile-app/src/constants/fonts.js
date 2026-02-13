@@ -1,0 +1,15 @@
+export const BERTIOGASANS_BLACK = "BertiogaSans-Black";
+export const BERTIOGASANS_BLACKITALIC = "BertiogaSans-BlackItalic";
+export const BERTIOGASANS_BOLD = "BertiogaSans-Bold";
+export const BERTIOGASANS_BOLDITALIC = "BertiogaSans-BoldItalic";
+export const BERTIOGASANS_EXTRABOLD = "BertiogaSans-ExtraBold";
+export const BERTIOGASANS_EXTRABOLDITALIC = "BertiogaSans-ExtraBoldItalic";
+export const BERTIOGASANS_EXTRALIGHT = "BertiogaSans-ExtraLight";
+export const BERTIOGASANS_ITALIC = "BertiogaSans-Italic";
+export const BERTIOGASANS_LIGHT = "BertiogaSans-Light";
+export const BERTIOGASANS_LIGHTITALIC = "BertiogaSans-LightItalic";
+export const BERTIOGASANS_MEDIUM = "BertiogaSans-Medium";
+export const BERTIOGASANS_MEDIUMITALIC = "BertiogaSans-MediumItalic";
+export const BERTIOGASANS_REGULAR = "BertiogaSans-Regular";
+export const BERTIOGASANS_SEMIBOLD = "BertiogaSans-SemiBold";
+export const BERTIOGASANS_SEMIBOLDITALIC = "BertiogaSans-SemiBoldItalic";

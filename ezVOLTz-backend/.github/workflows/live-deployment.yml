@@ -1,0 +1,74 @@
+name: Production Deployment
+
+on:
+  push:
+    branches:
+      - live
+
+env:
+  USERNAME: irfan.ali@solutionsloft.com
+  REPO: ${{ github.repository }}
+  GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+
+jobs:
+  deployment:
+    runs-on: ['self-hosted', 'Live Server']
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Build Dependencies
+        run: yarn install
+
+      - name: Run the project
+        run: pm2 restart ezvoltz
+
+      - name: Send email on success only
+        if: success()
+        run: echo "Sending Email..."
+
+  send-email:
+    runs-on: ubuntu-latest
+    needs: deployment
+    if: success()
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Email Dependencies
+        run: yarn install
+
+      - name: Send email on success only
+        if: success()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 587
+          username: ${{ env.USERNAME }}
+          password: ${{ env.GMAIL_APP_PASSWORD }}
+          subject: 'Build Successful on Repo: ${{ env.REPO }} and Branch: ${{ github.ref_name }}'
+          to: 'irfan.ali@solutionsloft.com,waqas@solutionsloft.com'
+          from: irfan.ali@solutionsloft.com
+          body: |
+            Branch: ${{ github.ref_name }}
+            Repo: ${{ env.REPO }}
+            Pusblished By: ${{ github.event.pusher.name }}
+            Workflow Link: [View Workflow](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            Commit ID: ${{ github.sha }}
+            Commit Link: [View Commit](https://github.com/${{ env.REPO }}/commit/${{ github.sha }})

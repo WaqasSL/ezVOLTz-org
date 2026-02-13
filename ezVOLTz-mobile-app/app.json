@@ -1,0 +1,8 @@
+{
+  "name": "ezVoltz",
+  "displayName": "ezVoltz",
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-3173681742415461~6372743090",
+    "ios_app_id": "ca-app-pub-3173681742415461~2433498085"
+  }
+}

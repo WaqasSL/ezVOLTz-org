@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string name="app_name">ezVoltz</string>
+  <string name="facebook_app_id">521667560034752</string>
+  <string name="facebook_client_token">f6b9bb8fa4ceb636111a607e194e3ba7</string>
+  <string name="fb_login_protocol_scheme">fb521667560034752</string>
+</resources>
